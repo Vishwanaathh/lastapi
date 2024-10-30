@@ -25,7 +25,7 @@ app.delete('/:id',async(req,res)=>{
     const a=await block.findByIdAndDelete(id);
     res.status(200).json();
 })
-mongoose.connect('mongodb+srv://admin:root@cluster0.kwlzyeo.mongodb.net/BLOCKINFO?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect()
 .then(app.listen(7000,()=>{
   console.log('Listening');
 }));
